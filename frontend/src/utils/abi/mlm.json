@@ -1,0 +1,188 @@
+[
+  {
+    "inputs": [
+      {
+        "name": "_coin",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "Nonpayable",
+    "type": "Constructor"
+  },
+  {
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "Event"
+  },
+  {
+    "inputs": [
+      {
+        "name": "referrer",
+        "type": "address"
+      }
+    ],
+    "name": "buyTicket",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "changeCommissionWallet",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "_wallet",
+        "type": "address"
+      }
+    ],
+    "name": "changeReceiptWallet",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ],
+    "name": "commissionWallet",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "name": "registered",
+        "type": "bool"
+      },
+      {
+        "name": "referrer",
+        "type": "address"
+      },
+      {
+        "name": "referralCommission",
+        "type": "uint256"
+      },
+      {
+        "name": "withdrawnReward",
+        "type": "uint256"
+      },
+      {
+        "name": "referralsCount",
+        "type": "uint256[5]"
+      }
+    ],
+    "inputs": [
+      {
+        "name": "_user",
+        "type": "address"
+      }
+    ],
+    "name": "getUser",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ],
+    "name": "owner",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "type": "address"
+      }
+    ],
+    "name": "receiptWallet",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "name": "renounceOwnership",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "type": "uint256"
+      }
+    ],
+    "name": "totalRest",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "name": "registered",
+        "type": "bool"
+      },
+      {
+        "name": "referrer",
+        "type": "address"
+      },
+      {
+        "name": "referralCommission",
+        "type": "uint256"
+      },
+      {
+        "name": "withdrawnReward",
+        "type": "uint256"
+      }
+    ],
+    "inputs": [
+      {
+        "type": "address"
+      }
+    ],
+    "name": "users",
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "name": "withdrawForRecipient",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "name": "withdrawReward",
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
